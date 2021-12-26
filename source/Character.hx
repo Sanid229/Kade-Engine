@@ -196,7 +196,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWNmiss', 'Pico Down Note MISS', 24);
 
 				loadOffsetFile(curCharacter);
-				barColor = 0xFFb7d855;
+				barColor = 0xFF31b0d1;
 
 				playAnim('idle');
 
