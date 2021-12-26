@@ -170,8 +170,8 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 				barColor = 0xFFf3ff6e;
 				playAnim('idle');
-			case 'pico':
-				tex = Paths.getSparrowAtlas('Pico_FNF_assetss', 'shared', true);
+			case 'glitch':
+				tex = Paths.getSparrowAtlas('Glitch_assetss', 'shared', true);
 				frames = tex;
 				animation.addByPrefix('idle', "Pico Idle Dance", 24, false);
 				animation.addByPrefix('singUP', 'pico Up note0', 24, false);
