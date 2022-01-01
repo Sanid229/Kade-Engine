@@ -94,7 +94,7 @@ class Character extends FlxSprite
 				animation.addByIndices('idleLoop', "Dad idle dance", [11, 12], "", 12, true);
 
 				loadOffsetFile(curCharacter);
-				barColor = 0xFF31b0d1;
+				barColor = 0xFFffaa6f;
 
 				playAnim('idle');
 			case 'spooky':
