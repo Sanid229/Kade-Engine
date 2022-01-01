@@ -27,7 +27,12 @@ class StoryMenuState extends MusicBeatState
 	{
 		return [
 			['tutorial'],
-			['test']
+			['bopeebo', 'fresh', 'dadbattle'],
+			['spookeez', 'south', "monster"],
+			['pico', 'philly', "blammed"],
+			['satin-panties', "high", "milf"],
+			['cocoa', 'eggnog', 'winter-horrorland'],
+			['senpai', 'roses', 'thorns']
 		];
 	}
 
@@ -37,7 +42,12 @@ class StoryMenuState extends MusicBeatState
 
 	var weekCharacters:Array<Dynamic> = [
 		['', 'bf', 'gf'],
-		['', 'bf', 'gf'],
+		['dad', 'bf', 'gf'],
+		['spooky', 'bf', 'gf'],
+		['pico', 'bf', 'gf'],
+		['mom', 'bf', 'gf'],
+		['parents-christmas', 'bf', 'gf'],
+		['senpai', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
@@ -176,7 +186,9 @@ class StoryMenuState extends MusicBeatState
 
 		sprDifficulty = new FlxSprite(leftArrow.x + 130, leftArrow.y);
 		sprDifficulty.frames = ui_tex;
+		sprDifficulty.animation.addByPrefix('easy', 'EASY');
 		sprDifficulty.animation.addByPrefix('normal', 'NORMAL');
+		sprDifficulty.animation.addByPrefix('hard', 'HARD');
 		sprDifficulty.animation.play('easy');
 		sprDifficulty.antialiasing = FlxG.save.data.antialiasing;
 		changeDifficulty();

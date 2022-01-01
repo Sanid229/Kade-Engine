@@ -94,7 +94,7 @@ class Character extends FlxSprite
 				animation.addByIndices('idleLoop', "Dad idle dance", [11, 12], "", 12, true);
 
 				loadOffsetFile(curCharacter);
-				barColor = 0xFFffaa6f;
+				barColor = 0xFFaf66ce;
 
 				playAnim('idle');
 			case 'spooky':
@@ -171,7 +171,7 @@ class Character extends FlxSprite
 				barColor = 0xFFf3ff6e;
 				playAnim('idle');
 			case 'pico':
-				tex = Paths.getSparrowAtlas('Glitch_assetss', 'shared', true);
+				tex = Paths.getSparrowAtlas('Pico_FNF_assetss', 'shared', true);
 				frames = tex;
 				animation.addByPrefix('idle', "Pico Idle Dance", 24, false);
 				animation.addByPrefix('singUP', 'pico Up note0', 24, false);
@@ -196,7 +196,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWNmiss', 'Pico Down Note MISS', 24);
 
 				loadOffsetFile(curCharacter);
-				barColor = 0xFF31b0d1;
+				barColor = 0xFFb7d855;
 
 				playAnim('idle');
 
@@ -385,20 +385,6 @@ class Character extends FlxSprite
 
 				loadOffsetFile(curCharacter);
 				barColor = 0xFF9a00f8;
-
-				playAnim('idle');
-			case 'no':
-				// DAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('Fred', 'shared', true);
-				frames = tex;
-				animation.addByPrefix('idle', 'idle', 24, false);
-				animation.addByPrefix('singUP', 'up', 24, false);
-				animation.addByPrefix('singRIGHT', 'right', 24, false);
-				animation.addByPrefix('singDOWN', 'down', 24, false);
-				animation.addByPrefix('singLEFT', 'left', 24, false);
-
-				loadOffsetFile(curCharacter);
-				barColor = 0xFFaf66ce;
 
 				playAnim('idle');
 			default:
