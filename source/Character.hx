@@ -387,7 +387,7 @@ class Character extends FlxSprite
 				barColor = 0xFF9a00f8;
 
 				playAnim('idle');
-			case 'fred':
+			case 'no':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('Fred', 'shared', true);
 				frames = tex;
