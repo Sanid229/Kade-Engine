@@ -27,7 +27,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		return [
 			['tutorial'],
-			['sus']
+			['test']
 		];
 	}
 
