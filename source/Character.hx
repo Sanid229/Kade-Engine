@@ -82,7 +82,7 @@ class Character extends FlxSprite
 				updateHitbox();
 				antialiasing = false;
 
-			case 'dad':
+			case 'fred':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('DADDY_DEAREST', 'shared', true);
 				frames = tex;
@@ -94,7 +94,7 @@ class Character extends FlxSprite
 				animation.addByIndices('idleLoop', "Dad idle dance", [11, 12], "", 12, true);
 
 				loadOffsetFile(curCharacter);
-				barColor = 0xFFaf66ce;
+				barColor = 0xFF31b0d1;
 
 				playAnim('idle');
 			case 'spooky':
